@@ -3,7 +3,7 @@ const {describe, it} = require("mocha");
 const expect = require("chai").expect;
 
 describe("getPaymentTokenFromAPI", function() {
-    it("Async testing with done callback", function(done) {
+    it("Async test", function(done) {
 	getPaymentTokenFromAPI(true)
 	    .then((data) => {
 		expect(data).to.have.property('data');

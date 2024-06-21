@@ -5,7 +5,7 @@ const Utils = require("./utils");
 const assert = require("assert");
 
 describe("sendPaymentRequestToApi", function() {
-    it("check that Utils.calculateNumber is stubbed", function() {
+    it("utils check", function() {
 	const spy = sinon.spy(console, "log");
 	const stub = sinon.stub(Utils, "calculateNumber").returns(10);
 	sendPaymentRequestToApi(100, 20);
